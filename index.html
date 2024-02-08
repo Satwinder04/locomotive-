@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            width: 100vw;
+        }
+
+        #page1 {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(95, 255, 215);
+        }
+
+        #page2 {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(143, 212, 255);
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+        #page2 img{
+            width: 200px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main" data-scroll-container>
+        <div id="page1" data-scroll>
+        </div>
+        <div id="page2">
+            
+            <img data-scroll data-scroll-speed="3" src="https://images.pexels.com/photos/19526798/pexels-photo-19526798/free-photo-of-photo-of-a-tree-on-a-hill.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt="" srcset="">
+        </div>
+        <div id="page1" data-scroll>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script>
+
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            lerp:0.1    
+        });
+    </script>
+</body>
+
+</html> 
+<!-- draw the stucture of PCB -->
